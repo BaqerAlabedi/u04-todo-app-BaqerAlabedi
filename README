@@ -29,7 +29,7 @@ Detta kommer att skapa en Docker-behållare som används för att komma åt båd
 
 - Om det skapades framgångsrikt, använd Google Chrome för att öppna Adminer genom att skriva 127.0.0.1:8080 i sökfältet.
 
-- Logga in med servern: 'mariadb', användarnamn: 'andre', lösenord: 'andre', databas: 'db'.
+- Logga in med servern: 'mariadb', användarnamn: 'Bager', lösenord: 'Bager', databas: 'db'.
 
 - När du är i, klicka på SQL-kommandon och klistra in SQL-kommandona nedan.
 
