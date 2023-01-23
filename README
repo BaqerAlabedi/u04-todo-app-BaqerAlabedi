@@ -1,0 +1,59 @@
+# u04-todo-app
+
+Detta projekt skapades för att kunna göra en "att-göra"-lista för saker som kan vara svåra att komma ihåg.
+
+Projektet är användbart för människor som har svårt att komma ihåg vad de ska göra. Det gör det lättare att komma ihåg och faktiskt GÖRA det som måste göras.
+
+Vad är möjligt att göra med detta projekt?
+
+- Lägg till och ta bort anteckningar
+- Radera anteckningar
+- Uppdatera anteckningar.
+- Använd en kryssruta för att markera om en uppgift är klar
+
+## Få det att fungera
+
+Följ stegen nedan för att komma igång:
+
+- Ladda ner och installera [Docker](https://docs.docker.com/get-docker/).
+
+- Fortsätt att klona arkivet från Github till en önskad mapp.
+
+- Öppna mappen som innehåller projektet i VS Code (önskad arbetsyta).
+
+- I konsolen, navigera till 'u04' och skriv docker compose up.
+
+Detta kommer att skapa en Docker-behållare som används för att komma åt både projektet och databasen från Google Chrome (föredragen webbläsare).
+
+- Kontrollera i Docker om en container har skapats.
+
+- Om det skapades framgångsrikt, använd Google Chrome för att öppna Adminer genom att skriva 127.0.0.1:8080 i sökfältet.
+
+- Logga in med servern: 'mariadb', användarnamn: 'andre', lösenord: 'andre', databas: 'db'.
+
+- När du är i, klicka på SQL-kommandon och klistra in SQL-kommandona nedan.
+
+(Detta skapar den nödvändiga tabellen och de kolumner som behövs för att projektet ska köras korrekt).
+
+``` bash
+   SKAPA TABELL "att göra" (
+   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   `title` varchar(100) COLLATE 'utf8mb4_swedish_ci' INTE NULL,
+   `description` varchar(255) COLLATE 'utf8mb4_swedish_ci' INTE NULL,
+   `checkbox` tinyint(1) NULL
+);
+```
+
+- När tabellen skapas gå över till 127.0.0.1 för att börja använda projektet.
+
+- Njut av!
+
+## Demo
+
+[Skärmdump](https://paste.pics/1d2eae038e1d5261d869da1b67a9c1c4).
+
+Den här länken ger dig en skärmdump från ett exempel på "att göra"-listan.
+
+## Författare
+
+- Baqer Al-abedi
