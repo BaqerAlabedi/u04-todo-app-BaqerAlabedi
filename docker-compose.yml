@@ -23,7 +23,7 @@ services:
   mariadb:
         image: mariadb:latest
         environment:
-            MYSQL_ROOT_PASSWORD: 'Bager'
+            MYSQL_ROOT_PASSWORD: 'mariadb'
             MYSQL_USER: 'Bager'
             MYSQL_PASSWORD: 'Bager'
             MYSQL_DATABASE: 'db'

@@ -29,7 +29,7 @@ Detta kommer att skapa en Docker-behållare som används för att komma åt båd
 
 - Om det skapades framgångsrikt, använd Google Chrome för att öppna Adminer genom att skriva 127.0.0.1:8080 i sökfältet.
 
-- Logga in med servern: 'mariadb', användarnamn: 'andre', lösenord: 'andre', databas: 'db'.
+- Logga in med servern: 'mariadb', användarnamn: 'Bager', lösenord: 'Bager', databas: 'db'.
 
 - När du är i, klicka på SQL-kommandon och klistra in SQL-kommandona nedan.
 
@@ -47,13 +47,6 @@ Detta kommer att skapa en Docker-behållare som används för att komma åt båd
 - När tabellen skapas gå över till 127.0.0.1 för att börja använda projektet.
 
 - Njut av!
-
-## Demo
-
-[Skärmdump](https://paste.pics/1d2eae038e1d5261d869da1b67a9c1c4).
-
-Den här länken ger dig en skärmdump från ett exempel på "att göra"-listan.
-
 ## Författare
 
 - Baqer Al-abedi
