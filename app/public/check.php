@@ -1,5 +1,5 @@
 <?php 
-include "../php/functions.php";
+include "functions.php";
 
 checkbox();
 

@@ -1,4 +1,4 @@
-<?php include "../php/functions.php";?>
+<?php include "functions.php";?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,17 @@
 <form action="index.php" method="POST">
 <button class="btn btn-primary">Add Post</button>
 
-<?php create();?>
+<?php
+
+$host = "mariadb";
+$db = "db";
+$user = "Bager";
+$password = "Bager";
+
+
+?>
+<?php 
+create();?>
 </form>
 
 <?php showAllData();?>
@@ -40,7 +50,7 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 <p>Description: <?php echo $row['description']?></p>
 
 <a href="check.php?id=<?php echo $row['id']?>">
-<img src="../assets/unchecked.jpg" width="50px" height="40px"></a>
+<img src="resurser/unchecked.jpg" width="50px" height="40px"></a>
 
 <a class="btn btn-primary" href="update.php?id=<?php echo $row['id']?>">Edit</a>
 <a class="btn btn-primary" href="delete.php?id=<?php echo $row['id']?>">Delete Post</a>
@@ -64,7 +74,7 @@ else {
 
 
 <a href="uncheck.php?id=<?php echo $row['id']?>">
-<img src="../assets/checked.jpg" width="55px" height="40px"></a>
+<img src="resurser/checked.jpg" width="55px" height="40px"></a>
 
 <a class="btn btn-primary" href="update.php?id=<?php echo $row['id']?>">Edit</a>
 <a class="btn btn-primary" href="delete.php?id=<?php echo $row['id']?>">Delete Post</a>

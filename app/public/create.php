@@ -1,5 +1,5 @@
 <?php 
-include "../php/functions.php";
+include "functions.php";
 create();
 header("location: read.php");
 ?>

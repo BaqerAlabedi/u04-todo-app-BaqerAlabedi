@@ -36,7 +36,7 @@ Detta kommer att skapa en Docker-behållare som används för att komma åt båd
 (Detta skapar den nödvändiga tabellen och de kolumner som behövs för att projektet ska köras korrekt).
 
 ``` bash
-   SKAPA TABELL "att göra" (
+   SKAPA TABELL "TODO" (
    `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
    `title` varchar(100) COLLATE 'utf8mb4_swedish_ci' INTE NULL,
    `description` varchar(255) COLLATE 'utf8mb4_swedish_ci' INTE NULL,

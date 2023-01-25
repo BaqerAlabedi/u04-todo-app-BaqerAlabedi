@@ -1,4 +1,4 @@
-<?php include "../php/functions.php";
+<?php include "functions.php";
 if(isset($_POST['no'])) {
     header("location: read.php"); 
 
