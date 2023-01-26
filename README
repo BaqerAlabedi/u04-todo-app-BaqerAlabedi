@@ -1,6 +1,6 @@
 # u04-todo-app
 
-Detta projekt skapades för att kunna göra en "att-göra"-lista för saker som kan vara svåra att komma ihåg.
+Detta projekt skapades för att kunna göra en "TODO"-lista för saker som kan vara svåra att komma ihåg.
 
 Projektet är användbart för människor som har svårt att komma ihåg vad de ska göra. Det gör det lättare att komma ihåg och faktiskt GÖRA det som måste göras.
 
@@ -41,6 +41,7 @@ Detta kommer att skapa en Docker-behållare som används för att komma åt båd
    `title` varchar(100) COLLATE 'utf8mb4_swedish_ci' INTE NULL,
    `description` varchar(255) COLLATE 'utf8mb4_swedish_ci' INTE NULL,
    `checkbox` tinyint(1) NULL
+    primary key (ID)
 );
 ```
 
