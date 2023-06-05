@@ -15,6 +15,12 @@
 <div class="col-xs-6">
     <h1 class="text-center">To-Do List</h1>
     
+    <!-- Här skapar vi en form, actionen ska ta oss till create.php, och den ska posta datan.  -->
+    <!-- i diven har vi skrivit en title där använadaren ska skriva in det som man villl skriva in -->
+    <!-- en till div med description, alltså samma som tidigare.  -->
+    <!-- där efter har vi en knapp som ska därefter posta datan som man har skrivit ovan.  -->
+    <!-- den andra knappen tar oss till de gamla sakerna som vi har postat tidigare -->
+
 <form action="create.php" method="POST">
 <div class="form-group">
 <h3 for="title">Title:</h3>
@@ -27,7 +33,7 @@
 </div>
     <input class="btn btn-primary" type="submit" name="submit" value="Add Post">
     <button class="btn btn-primary">See All Posts</button>
-    
+
 
 </form>
 

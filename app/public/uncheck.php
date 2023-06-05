@@ -1,4 +1,5 @@
 <?php 
+// dENNA FUNCKTION KÖRS NÄR MAN UNCHECKAR EN BOX I READ.PHP OCH SKICKAR OSS TILLBAKA TILL READ.PHP
 include "functions.php";
 
 uncheckbox();

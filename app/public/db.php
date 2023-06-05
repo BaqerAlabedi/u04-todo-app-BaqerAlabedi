@@ -1,5 +1,12 @@
 <?php
 
+// Rad 8 till rad 14 så skapas det en ny variabel där det skapas connection med data basen. med hjälp av varibalerna från tidigra e rader får in informationen. 
+// rad 14 är ifall du inte lyckas skapa en connection så skapas det en echo där det står "ERROR CONNECTION TO MYSQL". 
+//varibalen ska även visa en message som är predefined. 
+
+
+
+
 $host = "mariadb";
 $db = "db";
 $user = "Bager";

@@ -1,5 +1,14 @@
 <?php include "db.php";
 
+
+// Create är en funktion där vi tar in connection där vi specifiserar att variabeln är global(vi skriver global för att få in den i funktionen), eftersom den finns i ett annat dokument. 
+// vi måste  alltid ha en connection med data based annars kommer vi ej kunna posta eller create saker. 
+// om submit är tryck gör det här, post är php sätt att skicka. det som den postar är title och description är description. 
+// om den trycks så ska title bli till en variabel samma sak gäller för description. 
+// vi skapar en query vilken är connection till databaset "todo" där vi specifiserar att title och description ska gå in i title och desription i databasen. 
+// så query är fortfarande en variabel vilket vi måste fortfarande execute variabeln, title och description. 
+// beskriv vad crud är!!
+
 function create() {
     global $connection;
 
@@ -15,6 +24,13 @@ function create() {
         
     }
 }
+
+// update, Det enda skillnadedn på uppdate är när den tryck så ska vi hämta id och posta title och description. 
+// vi har redan postat den, så vi kommer trycka på noten för att uppdatera, det vi gör är att vi postar det som är ett nytt.
+// vi måste veta vilket id den har när vi hämtar om den på nytt. 
+// om den lyckas uppdatera så ska den oss tillbaka till read.php om den inte lyckas inte så får vi fram connection error.
+// om vi ej har en query då ska det bara stå query fel. Den ska bara liksom dö!!!!!
+
 
 function update() {
     global $connection;
@@ -42,6 +58,7 @@ function update() {
     }
 }
 
+// Delet är att man hämtar id och senare execute, Man raderar det som redan finns. 
 function delete() {
     global $connection;
     
@@ -52,6 +69,8 @@ function delete() {
          
 }
 
+// vi prepar att hämta ut allt från todo tabellen och vi sorterar det uppifrån och ner, vi sorterar det med id uppifrån och ner och det sparas i en variabel som executas.
+
 function showAllData() {
     global $connection;
     global $stmt;
@@ -60,6 +79,9 @@ function showAllData() {
 
 }
 
+// här plockar vi id, variabeln blir id checkbox. Connection ska förbreda att uppdatera tabellen. Sen ska vi set checkbok vilket är att sätta ett nytt value. 
+// checkbok är checkbok i todo där id är variabeln
+// ifall du execute så går du tillbaka till read.php
 function checkbox() {
     global $connection;
     
@@ -75,6 +97,8 @@ function checkbox() {
     } 
 }
 
+
+// exaxt samma sak som tidigare, enda skillnaden är att om man vill ta bort den eller inte. olika Id kopplat till tabellen. 
 function uncheckbox() {
     global $connection;
     

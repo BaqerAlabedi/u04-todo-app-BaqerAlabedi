@@ -1,4 +1,5 @@
 <?php include "functions.php";
+// "no" betyder att man ska gå tilbaka till read medans yes betyder att man ska deleta den beffintliga informationen och går tillbaka till read
 if(isset($_POST['no'])) {
     header("location: read.php"); 
 
@@ -22,7 +23,7 @@ if(isset($_POST['no'])) {
 <div class="container">
 <div class="col-xs-6">
     <h1 class="text-center">Delete Post</h1>
-
+<!-- form är en frontenden medans det som jag förklarade där uppe var backenden -->
     <form method="POST">
     <p>Proceed to delete?</p>
     <input class="btn btn-primary" type="submit" name="no" value="Go Back">
